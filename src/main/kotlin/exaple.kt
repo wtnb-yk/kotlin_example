@@ -1,3 +1,5 @@
 fun main() {
-    println("Hello Kotlin")
+    val user = User()
+    user.name = "Tanaka"
+    println(user.isValidName)
 }
