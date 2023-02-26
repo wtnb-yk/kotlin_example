@@ -1,4 +1,22 @@
 fun main() {
+    var oddNumbers = with(mutableListOf<Int>()) {
+        for (i in 1..10) {
+            if (i % 2 == 1) this.add(i)
+        }
+        this.joinToString(separator = " ")
+    }
+    println(oddNumbers)
+
+    oddNumbers = mutableListOf<Int>().run {
+        for (i in 1..10) {
+            if (i % 2 == 1) this.add(i)
+        }
+        this.joinToString(separator = " ")
+    }
+    println(oddNumbers)
+}
+
+fun executeDataClass() {
     val user = UserData(1, "Tanaka")
     val same = UserData(1, "Tanaka")
     val other = UserData(2, "Tanaka")
