@@ -1,1 +1,1 @@
-data class UserData (val id: Int, val name: String)
+data class UserData (val id: Int, var name: String)
