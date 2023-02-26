@@ -1,5 +1,5 @@
 fun main() {
-    val user = User()
-    user.name = "Tanaka"
-    println(user.isValidName)
+    val user = UserData(1, "Tanaka")
+    println(user.id)
+    println(user.name)
 }
